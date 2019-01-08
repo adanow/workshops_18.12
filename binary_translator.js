@@ -2,6 +2,9 @@ function toBinary(number) {
   if (number < 0) {
     console.log("number must be greater than 0")
   }
+  else if (number === 0){
+    return 0;
+  }
 
   let highestPower = Math.floor(Math.log2(number));
   let binary = new Array(highestPower + 1).fill(0);
@@ -19,10 +22,9 @@ function toBinary(number) {
     }
 
   }, number);
-  binary.reverse()
-console.log(binary.join(""))
+  return result = (binary.reverse()).join("");
 }
 
 
-toBinary(15)
+console.log(toBinary(2))
 
