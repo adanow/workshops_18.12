@@ -1,6 +1,6 @@
 function toBinary(number) {
   if (number < 0) {
-    console.log("number must be greater than 0")
+    return console.log("number must be greater than 0")
   }
   else if (number === 0){
     return 0;
